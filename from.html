@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Form - Birat AIMS Institute</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #007BFF, #00c6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Box */
+.form-container {
+    background: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: gray;
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>Birat AIMS Institute</h2>
+    <p>Admission Form - Information of Technology</p>
+
+    <!-- ?? CONNECT THIS TO GOOGLE FORM -->
+    <form action="YOUR_GOOGLE_FORM_LINK" method="POST">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+
+        <input type="text" name="father" placeholder="Father's Name" required>
+
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <input type="text" name="address" placeholder="Address" required>
+
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option>Basic Computer</option>
+            <option>Office Package</option>
+            <option>Computer Operator</option>
+            <option>Graphic Design</option>
+            <option>Tally</option>
+            <option>Diploma in IT</option>
+        </select>
+
+        <textarea name="message" placeholder="Message (Optional)"></textarea>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+</div>
+
+</body>
+</html>

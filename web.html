@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birat AIMS Institute</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00c6ff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(120deg, #007BFF, #00c6ff);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #007BFF;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #222;
+    color: white;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Cards */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    background: #f4f6f9;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact */
+.contact {
+    background: #111;
+    color: white;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Birat AIMS Institute</h1>
+    <p>Information of Technology</p>
+    <p>Learn IT skills at affordable prices</p>
+
+    <!-- ?? Replace link with your Google Form -->
+    <a href="file:///C:/Users/birat%20aims/Desktop/from.html">Apply Now</a>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+        We provide quality IT and computer education at very affordable prices.
+        Our mission is to make every student skilled and ready for jobs or self-employment.
+    </p>
+</section>
+
+<!-- Courses -->
+<section class="section" id="courses">
+    <h2>Our Courses</h2>
+
+    <div class="courses">
+        <div class="card">Basic Computer</div>
+        <div class="card">Office Package</div>
+        <div class="card">Computer Operator</div>
+        <div class="card">Graphic Design</div>
+        <div class="card">Tally (Accounting)</div>
+        <div class="card">Diploma in IT</div>
+    </div>
+</section>
+
+<!-- Why -->
+<section class="section">
+    <h2>Why Choose Us</h2>
+    <p> Affordable Fees</p>
+    <p> Practical Training</p>
+    <p> Job-Oriented Courses</p>
+    <p> Friendly Environment</p>
+</section>
+
+<!-- Contact -->
+<section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>9863624414</p>
+    <p>birataims86@gmail.com</p>
+    <p>karsiya,Dhanpalthan-4</p>
+</section>
+
+</body>
+</html>
